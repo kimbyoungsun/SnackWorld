@@ -4,14 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 
-
-<c:forEach var="item" items="${list}">
-	${item.name } ${item.company }
-	<br>
-</c:forEach>
-
-
 <jsp:include page="/WEB-INF/views/common/header.jsp"/>
+
 
         <!-- Hero slider-->
         <section class="pt-0">
@@ -524,7 +518,7 @@
         <button type="button" class="btn btn-primary">더보기 &nbsp; > </button>
         <!-- </div> -->
         </span>
-            </div>
+       </div>
             <!-- Gallery grid with gutters -->
             <div class="row">
                 <div class="col-6 p-5">
@@ -604,23 +598,23 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <img src="${path}/resources/img/icon/mapPin.png" alt="" />
-                </div>
-                <!-- <div id="map" class="col mx-1"></div>                                                                 
-                   Item                
-                  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=31153b79d643f0b6fa230d3c732f4a4e"></script>
-                  <script>
-                    var container = document.getElementById('map');
-                    var options = {
-                      center: new kakao.maps.LatLng(33.450701, 126.570667),
-                      level: 3
-                    };
-                
-                    var map = new kakao.maps.Map(container, options);
-                  </script> 
-              </div>    -->
+                    <!-- 지도를 표시할 div 입니다 -->
+					<div id="map" style="width:100%;height:500px;"></div>
+					
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=31153b79d643f0b6fa230d3c732f4a4e"></script>
+					<script>
+					var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+					    mapOption = { 
+					        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+					        level: 3 // 지도의 확대 레벨 3입니다.
+					    };
+					
+					// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+					var map = new kakao.maps.Map(mapContainer, mapOption); 
+					</script>
+                </div>               
             </div>
-            </div>
+          </div>
         </section>
 
         <!-- 편의점 배너 -->
@@ -746,7 +740,4 @@
 
             </div>
         </section>
-
-        
-        
 <jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>

@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 public class Member {
 	private int mno; // 소문자로 통일 권장
     private String id; 
-    private String password; 
-    private String role;
+    private String password;     
     private String name; 
     private String phone; 
     private String email; 
     private String address; 
-    private String hobby; 
+    private String gender; 
+    private String kakaotoken; 
     private String status; 
     private Date enrollDate; 
     private Date modifyDate;

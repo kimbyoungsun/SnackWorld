@@ -25,10 +25,14 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-//		log.info("@@@@@@@@@@@ selectAll : " + memberService.findAll());
-		model.addAttribute("list",service.selectAll());
+		log.info("@@@@@@@@@@@ selectAll : " + service.skip());
+		model.addAttribute("list",service.skip());
 		
-		return "home-snack-main";
+		//return "home-snack-main";
+		// return "community-write";
+		 // return "community-snack";
+		  return "home-snack-main";
+		 //return "community-board";
 	}
 	
 }

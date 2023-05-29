@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class Snack {
 	private int sNO;
 	private String name;
-	private String rawmtrl;
+	private String rawmtrl;	
 	private String company;
 	private String capacity;
 	private String category;
