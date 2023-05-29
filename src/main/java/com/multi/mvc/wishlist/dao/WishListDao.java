@@ -5,8 +5,10 @@ import java.util.Map;
 
 import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
 
 import com.multi.mvc.wishlist.model.vo.WishList;
+@Repository
 
 public class WishListDao {
 	public List<WishList> selectWishListList(SqlSession session, RowBounds rowBounds, Map<String, String> map) {

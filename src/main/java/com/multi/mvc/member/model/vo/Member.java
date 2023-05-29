@@ -17,7 +17,6 @@ public class Member {
     private String phone; 
     private String email; 
     private String address; 
-    private String gender; 
     private String kakaotoken; 
     private String status; 
     private Date enrollDate; 
