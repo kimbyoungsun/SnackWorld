@@ -11,6 +11,6 @@ public class WishList {
 	private int mno; // 소문자로 통일 권장!
     private int sno;
 
-		치킨치킨 다운님 치킨 깊티 뿌려주세요
+	싫어요
 	} 
 
