@@ -31,7 +31,7 @@ public class HomeController {
 		//return "home-snack-main";
 		// return "community-write";
 		 // return "community-snack";
-		  return "account/account-wishlist";
+		  return "home-snack-main";
 		 //return "community-board";
 	}
 	
