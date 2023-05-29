@@ -10,11 +10,13 @@ import com.multi.mvc.snack.model.vo.Snack;
 
 @Service
 public class SnackService {
-
+		
 	@Autowired
-	private SnackMapper mapper;
-	
-	public List<Snack> selectAll(){
+	private SnackMapper mapper;		
+	public  List<Snack> findAll() {		
 		return mapper.selectAll();
+	}
+	public String skip() {
+		return "skip";
 	}
 }
