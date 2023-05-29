@@ -1,6 +1,7 @@
 package com.multi.mvc.board.model.dao;
 
 import java.util.List;
+
 import java.util.Map;
 
 import org.apache.ibatis.session.RowBounds;
@@ -53,8 +54,10 @@ public class BoardDao {
 	}
 
 	
+	
 	public int deleteReply(SqlSession session, int no) {
 		return session.insert("com.multi.mvc.board.model.mapper.BoardMapper.deleteReply", no);
 	}
+	
 
 }

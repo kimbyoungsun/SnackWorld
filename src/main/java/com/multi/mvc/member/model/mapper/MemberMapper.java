@@ -1,6 +1,7 @@
 package com.multi.mvc.member.model.mapper;
 
 import java.util.List;
+
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -22,6 +23,8 @@ public interface MemberMapper {
 	 * @param map = password, mno 필수!
 	 * @return 결과값
 	 */
+	
+	
 	int updatePwd(Map<String, Object> map);
 	int deleteMember(int mno);
 	Member selectMemberByKakaoToken(String kakaoToken);
